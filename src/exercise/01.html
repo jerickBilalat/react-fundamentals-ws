@@ -3,7 +3,18 @@
 
 <!-- 🐨 Create (in HTML) a <body> with a <div> with the id of "root" -->
 <!-- 🐨 Then create a <script type="module"> for your JavaScript -->
-
+<html>
+    <body>
+        <div id="root"></div>
+        <script type="module">
+            const element = document.createElement('div')
+            element.textContent = "Hello World"
+            element.class = "container"
+            const root = document.getElementById('root')
+            root.appendChild(element)
+        </script>
+    </body>
+</html>
 <!-- These next instructions are to be written in JavaScript in the <script> tag -->
 <!-- 🐨 Create a div -->
 <!--   💰 document.createElement('div') -->
